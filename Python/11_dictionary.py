@@ -219,9 +219,9 @@ s.add(int(n))
 print(s)
 
 # can we have a set with 18(int) & '18' (str) as a value in it?
-s=[]
+s=set()
 s.add(18)
-s.('18')
+s.add('18')
 print(s) # s={'18',18}
 
 #.Find length of the set?
@@ -236,7 +236,30 @@ print(len(s)) # answer-2 bcz 1==1.0
 print(type (s)) # dictionary.
 
 
-#.
+#.Create an empty dictionary allow 4 frinds to enter their favourite language as value and use key as their name.Assume that the name are unique.
+l={}
+name=input("Enter Friends Name:")
+lang=input("Enter Friends lang:")
+l.update({name:lang})
+
+name=input("Enter Friends Name:")
+lang=input("Enter Friends lang:")
+l.update({name:lang})
+
+name=input("Enter Friends Name:")
+lang=input("Enter Friends lang:")
+l.update({name:lang})
+
+name=input("Enter Friends Name:")
+lang=input("Enter Friends lang:")
+l.update({name:lang})
+print(l)
+
+#The values entered later will be updated.
+#. can you change the values inside a list which is contained in a set s?
+# s={8,7,12,"Harry",[1,2]}- first of all we can not add list inside set.In python sets element require to be immutable & hashble.
+
+
 
 
 

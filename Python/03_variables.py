@@ -1,9 +1,9 @@
 a=1
 b=2
 c=a+b
-print(a+b)
+print(c)
 
-#Data Types: int, float, str, bool, list, tuple, dict, set
+# Data Types: int, float, str, bool, list, tuple, dict, set
 name="krishan" #string
 age=21        #int
 height=5.9   #float point number
@@ -27,6 +27,9 @@ is_student=True #boolean-yes/no
 # my-variable (contains a hyphen)
 # class (reserved keyword)
 # my variable (contains a space)
+
+
+
 #Printing variable values
 print("Name:", name)
 print("Age:", age)

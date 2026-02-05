@@ -1,11 +1,14 @@
 # We can write strings in 3 ways:
-#1. Using single quotes
+
+#1.Using single quotes
 str1='Hello, World!'
 print("String using single quotes:", str1)
-#2. Using double quotes
+
+#2.Using double quotes
 str2="Hello, Python!"
 print("String using double quotes:", str2)
-#3. Using triple quotes
+
+#3.Using triple quotes
 str3="""Hello,
 This is a multi-line string."""
 print("String using triple quotes:", str3)
@@ -13,18 +16,19 @@ print("Type of str3:", type(str3))  #<class 'str'>
 
 #String Slicing
 name="krishna"
-print("leangth of the string 'krishna':", len(name))  #8
+print("length of the string 'krishna':", len(name))  #8
 print("Original String:", name) #krishna
 print("First character:", name[0])  #k
 print("Last character:", name[-1])  #a
 
+# slicing of string: if we counted the string from the end (0 -1,-2,-3,-4,-5)
 
-name_slice1=name[0:4]  #slicing from index 0 to 3-excluding index 4
+name_slice1=name[0:4]  #slicing from index 0 to 3-excluding index 4.
 print("Sliced String (0-4):", name_slice1)  #kris
 name_slice2=name[2:6]  #slicing from index 2 to 5-excluding index 6
 print("Sliced String (2-6):", name_slice2)  #ishn
 name_slice3=name[:5]   #slicing from start to index 4-excluding index 5
-print("Sliced String (:5):", name_slice3)   #kr
+print("Sliced String (:5):", name_slice3)   #krish
 
 #Skip characters while slicing
 a="abcdefghijklmnopqrstuvwxyz"

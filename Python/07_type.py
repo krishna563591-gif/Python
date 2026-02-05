@@ -21,17 +21,21 @@ y=float(x) #typecasting int to float
 print("Value of y:", y)          #10.0
 print("Type of y:", type(y))     #<class 'float'>
 
+
 #2. float to int
 a=5.9     #float
 b=int(a)  #typecasting float to int
 print("Value of b:", b)          #5
 print("Type of b:", type(b))     #<class 'int'>
 
+
 #3. int to str
 m=25      #int
 n=str(m)  #typecasting int to str
 print("Value of n:", n)          #25
 print("Type of n:", type(n))     #<class 'str'>
+
+
 
 #4. str to int
 s="100"    #string

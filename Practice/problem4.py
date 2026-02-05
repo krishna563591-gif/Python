@@ -7,7 +7,7 @@ print(a+b)
 # write a python program to find remainder when a number is divided by b.
 a=35
 b=6
-print("Remainder when a is divided by b is:", a%b)
+print("Remainder when a number is divided by b is:", a%b)
 
 # check the type of variable assigned using input() function.
 a=input("enter a number:,a")
@@ -86,6 +86,8 @@ print("perimeter of circle is :",perimeter)
 celsius=int(input("enter temperature in celsius : "))
 fahrenheit=(celsius*9/5)+32
 print("temperature in fahrenheit is :",fahrenheit)
+
+
 # Write a program to convert temperature from Fahrenheit to Celsius.
 fahrenheit=int(input("enter temperature in fahrenheit : "))
 celsius=(fahrenheit-32)*5/9

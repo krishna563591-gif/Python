@@ -1,4 +1,4 @@
-# Loops- to do repetative task easily.
+# Loops-loops help to do repetative task very easily.
 
 #Types of loops.
 #1.while loop
@@ -6,20 +6,55 @@ i=1
 while(i<6):
     print(i)
     i+=1
-# output=1 2 3 4 5-runs utill the condition is false.
+# output=1 2 3 4 5-runs utill the condition is false- we have to make the condition false at somepoint otherwise its gonna be infinite.
+
 #Tasks
-l=[1,"harry","Rohan",3,"Krishna"]
+l=[1,"harry","Rohan",3,"Krishna"] # will run untill the condition is true.
 i=0
 while(i<len(l)+1):
     print(l(i))
 print(len(l))
 i+=1
 
-
-
+# result:  harry, Rohan, 3, Krishna
+#======================================================
 #2.For Loop-
-for i in range(4):
+for i in range(4):      
     print(i)
+    # result: 1,2,3,4,5
+
+
+
+#  # range function
+
+for i in range(0,4):
+    print(i)
+    # result: 1,2,3,4,5
+'''
+# For loop Iterate-list
+l=[1,4,6,234,6,764]
+for i l:
+    print(i) # result: 1 4 6 234 6 764
+
+# For loop Iterate-tuples
+t=(6,231,75,122)
+for i t:
+    print(i) # result: 6 231 75 122
+
+
+# For loop Iterate-string example
+s= "Harry"
+for i s:
+    print(s) # result= H a r r y
+
+    '''
+# For loop with else
+k=[1,7,8]
+for item in k:
+    print(item)
+
+else:
+    print("done")# this is printed when loop the exhaust or end.
 
 
 
@@ -86,24 +121,38 @@ for index, student in enumerate(students):
     print(f"Index {index}: {student}")
 
 
+#===============================================Break & Continue Statement
 # 3. LOOP CONTROL STATEMENTS
 print("\n--- LOOP CONTROL STATEMENTS ---")
 
-# break - Exit loop immediately
+#1. break - Exit loop immediately
 print("Using break:")
+
+
 for i in range(10):
-    if i == 3:
+    if (i == 3):# exit the loop rightnow.
         break
     print(i)  # Output: 0, 1, 2
 
-# continue - Skip current iteration
+
+
+#2. continue - Skip current iteration
 print("Using continue:")
+
+
 for i in range(5):
-    if i == 2:
-        continue
+    if (i == 2):
+        continue  # skip this iteration- skip this particular iteration- iteration means each number for e.g.100. iterations are 0-99 . 
     print(i)  # Output: 0, 1, 3, 4
 
-# else with loop - Runs if loop completes normally (without break)
+
+# pass- when we want skip the loop now & will work later on.
+
+
+
+
+
+# 3. else with loop - Runs if loop completes normally (without break)
 print("Using else with for:")
 for i in range(3):
     print(i)
@@ -136,3 +185,71 @@ password = ""
 while password != "secret":
     password = "secret"  # In real code, use input()
     print("Password correct!")
+
+'''
+#==================================Questions=================================================================
+#1. write a program to print multiplication table of a given number using loop.
+n= int(input("Enter a number:"))
+for i  range (1,11):
+    print(f"{n}*{i}={n*i}") # result: tables of 7-input was 7
+    
+
+
+# 2.write a program to greet all the person names stored in a list 'l'and which starts with s.
+l= ["harry","soham", "Sachin","Rahul"]
+
+for name in l:
+if (name.startswith("S")):
+print(f"hello")
+
+
+# 3. do question 1 with while loop.
+
+
+n= int(input("Enter a number:"))
+i= 1
+
+while (1<11):
+    print(f"{n}*{i}={n*i}") 
+    i+=1  # result: tables of 7-input was 7
+
+
+ #4.  write a program to find wether a given number by user is prime or not? 
+
+n= int(input("Enter a number:"))
+for i in range (2,n)
+if (n%i)==0:
+print("Number is not prime")
+break
+else:
+print("Number is prime)
+
+
+#5.write a programm to sum of first n natural numbers using while loop.
+
+n= int(input("Enter a number:"))
+i=1
+while(i<=n):
+sum+=i
+i+=
+print(sum)
+
+#6. write a program to calculate the factoeial of a given number using for loop.
+ #5!=1*2*3*4*5
+
+ n= int(input("Enter a number:"))
+  product=1
+ for i in range(1,n+1):
+product=product*1
+print (f"the factorial of {n} is {product}")
+
+
+
+reamainig other task
+ 
+
+
+
+
+
+    '''

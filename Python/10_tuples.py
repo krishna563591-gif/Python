@@ -43,7 +43,8 @@ count = my_tuple.count(2)
 # index tuple
 my_tuple = (10, 20, 45, 10, 30, 10, 55)
 index_of_10 = my_tuple.index(10)
-# Resulting index: 0 (the first occurrence is at index 0)
+# Resulting index: 0 (the first occurrence is at index 0-ignore later on value)
+
 
 #len(tuple): Returns the total number of elements in the tuple.
 #max(tuple): Returns the largest item in the tuple.
@@ -97,4 +98,5 @@ print(marks)
 
 # Write a program to sum a list of 4 numbers.
 l=[22,33,55,66]
-print(l)
+total=sum(l)
+print(total)

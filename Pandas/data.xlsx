@@ -1,0 +1,11 @@
+
+data = {
+    "StudentID": [1, 2, 3, 4, 5],
+    "Name": ["Ram", "Sita", "Hari", "Gita", "Shyam"],
+    "Age": [20, 22, 21, 23, 20],
+    "Course": ["Python", "Data Science", "Python", "ML", "Data Science"],
+    "Marks": [85, 90, 78, 88, 92],
+    "City": ["Kathmandu", "Lalitpur", "Bhaktapur", "Pokhara", "Birgunj"],
+    "EnrollDate": ["2024-01-10", "2023-11-05", "2024-02-01", "2023-09-18", "2024-01-25"]
+}
+

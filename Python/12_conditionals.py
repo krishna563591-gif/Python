@@ -1,4 +1,4 @@
-# Python Conditionals Examples
+# Python Conditionals Statements:
 """
 PYTHON CONDITIONALS - THEORY
 
@@ -18,22 +18,24 @@ Truthiness:
 - True values: Non-zero numbers, non-empty strings, non-empty collections
 - False values: 0, None, False, empty strings, empty collections
 """
+# ================================================
 #practice
 a=int(input("enter your age:"))
 if(a>=18):
     print("you are above the age of consent.")
     print("Good For You")
 else:
-    print("your are above the age of consent")
+    print("your are below the age of consent")
 
-
-
+#============================================
 
 # 1. If Statement
 age = 18
 if age >= 18:
     print("You are an adult")
 
+
+# =============================================
 # 2. If-Else Statement
 score = 45
 if score >= 50:
@@ -41,6 +43,7 @@ if score >= 50:
 else:
     print("You failed")
 
+#================================================
 # 3. If-Elif-Else Statement----important.
 temp = 25
 if temp < 0:
@@ -52,6 +55,8 @@ elif temp < 25:
 else:
     print("It's warm")
 
+#=====================================================
+
 # 4. Nested If---------important
 num = 10
 if num > 0:
@@ -61,6 +66,10 @@ if num > 0:
         print("Positive but less than or equal to 5")
 else:
     print("Not positive")
+
+
+
+#============================================================
 
 # Relational Operators=comparision operators
 

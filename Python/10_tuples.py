@@ -4,43 +4,58 @@ TUPLES IN PYTHON
 A tuple is an immutable (unchangeable) collection of items.
 Tuples are ordered and allow duplicate values.
 """
-# The Diffrence between list & tuple is you cannot be change the items.
+#===============================================================
+# The Diffrence between list & tuple: 
+#  you cannot be change the items in a tuple but you can change the items in a list.
+# we cannot modify data in a tuple but we can modify data in a list.
+# Tuples are defined using parentheses () while lists are defined using square brackets [].
+# Tuples are generally faster than lists because of their immutability, which allows for certain optimizations in memory and performance.
+# Tuples are often used to group related data together, such as coordinates (x, y) or a person's name and age (name, age). Lists are more commonly used for collections of items that may need to be modified, such as a list of tasks or a list of numbers.        
 
+#=======================================
 # 1. Creating Tuples
 a= (1,45,342,345,False,"Rohan","Shivam")
-print(a)
+print(a) #1 45 342 345 False Rohan Shivam
 
+#=======================================
 # Empty tuple
 empty_tuple = ()
-print(f"Empty tuple: {empty_tuple}")
+print(f"Empty tuple: {empty_tuple}") #Empty tuple: ()
 
+#=======================================    
 # Single element tuple (note the comma)
-single_tuple = (1,)
+single_tuple = (1,) # Without the comma, it would be just an integer in parentheses, not a tuple.
 print(f"Single element tuple: {single_tuple}")
-
+#=======================================
 # Multiple elements
 my_tuple = (1, 2, 3, 4, 5)
-print(f"Integer tuple: {my_tuple}")
+print(f"Integer tuple: {my_tuple}") # result: (1, 2, 3, 4, 5)
 
+#========================================== 
 # Mixed data types
 mixed_tuple = (1, "hello", 3.14, True)
-print(f"Mixed tuple: {mixed_tuple}")
+print(f"Mixed tuple: {mixed_tuple}") # result: (1, 'hello', 3.14, True)
 
+#===========================================    
 # Without parentheses (still a tuple)
 tuple_no_parens = 1, 2, 3
 print(f"Tuple without parentheses: {tuple_no_parens}")
-
-# From a list
+#===================================================
+# From a list: 
 list_to_tuple = tuple([1, 2, 3])
 print(f"Tuple from list: {list_to_tuple}")
+# result: (1, 2, 3)
 
+#=================================================================
 
 #.Tuple Methods:
-# 1.my_tuple = (1, 2, 2, 3, 2, 4)
+# count method: it return the count of the element in the tuple. EXAMPLE:
+my_tuple = (1, 2, 2, 3, 2, 2)
 count = my_tuple.count(2)
-# Resulting count: 3
+# Resulting count: 4 (because 2 is present 4 times in the tuple)
 
-# index tuple
+#==============================
+# index tuple: it return the index of the first occurrence of the value. EXAMPLE:
 my_tuple = (10, 20, 45, 10, 30, 10, 55)
 index_of_10 = my_tuple.index(10)
 # Resulting index: 0 (the first occurrence is at index 0-ignore later on value)
@@ -73,7 +88,7 @@ f6=("enter name of fruit:,")
 fruits.append(f6)
 f7=("enter name of fruit:,")
 fruits.append(f7)
-print(fruits)
+print(fruits) # result: (frit1, fruit2, fruit3, fruit4, fruit5, fruit6, fruit7 -entered by user)
 
 # write a program to accept marks of 6 students & display them in a sorted manner.
 

@@ -1,35 +1,53 @@
 # Loops-loops help to do repetative task very easily.
 
+# range() function: it is used to generate a sequence of numbers. It takes three parameters: start, stop, and step. The start parameter is the number from which the sequence will begin, the stop parameter is the number at which the sequence will end (exclusive), and the step parameter is the increment between each number in the sequence. If the start parameter is not provided, it defaults to 0. If the step parameter is not provided, it defaults to 1.
+#e.g. range(5) will generate a sequence of numbers from 0 to 4 (0, 1, 2, 3, 4). range(1, 5) will generate a sequence of numbers from 1 to 4 (1, 2, 3, 4). range(0, 10, 2) will generate a sequence of even numbers from 0 to 8 (0, 2, 4, 6, 8).
+
+
+
+
+
 #Types of loops.
-#1.while loop
+#===================================================
+#1.while loop: runs utill the condition is true. we have to make the condition false at somepoint otherwise its gonna be infinite.
+
 i=1
 while(i<6):
     print(i)
     i+=1
 # output=1 2 3 4 5-runs utill the condition is false- we have to make the condition false at somepoint otherwise its gonna be infinite.
-
+# we need to either increment or decrement the value of i to make the condition false at some point otherwise it will be infinite loop.
 #Tasks
-l=[1,"harry","Rohan",3,"Krishna"] # will run untill the condition is true.
+list=[1,"harry","Rohan",3,"Krishna"] # will run untill the condition is true.
 i=0
-while(i<len(l)+1):
-    print(l(i))
-print(len(l))
-i+=1
+while(i<len(list)): # explained- we are checking the condition that i is less than the length of the list. if it is true then we will print the value at index i and then increment i by 1. this will continue until i is equal to the length of the list, at which point the condition will be false and the loop will stop.
+    print(list[i])
+    i+=1    
+# result: 1 harry Rohan 3 Krishna- we have to make the condition false at somepoint otherwise its gonna be infinite.
 
-# result:  harry, Rohan, 3, Krishna
+
 #======================================================
-#2.For Loop-
-for i in range(4):      
-    print(i)
-    # result: 1,2,3,4,5
+
+#2.For Loop:
+# for loop will  take 1 by 1 value of something.
+
+for i in range(1,6,1):  # range(start, stop, step)-important   
+    print(i) # result: 1,2,3,4,5
+# Before writing for loop ask these questions:
+#what should i repeat? how many times should i repeat? what should i do in each repetition like numbers or strings values.
+
+# Beginner mistakes:
+# forgeting intendation & colons(:) & using wrong range parameters.
 
 
 
-#  # range function
+
+# range function
 
 for i in range(0,4):
     print(i)
-    # result: 1,2,3,4,5
+   # result: 0,1,2,3- range is exclusive of stop value.
+
 '''
 # For loop Iterate-list
 l=[1,4,6,234,6,764]
@@ -147,7 +165,13 @@ for i in range(5):
 
 
 # pass- when we want skip the loop now & will work later on.
+#example:
+for i in range(5):
+    if (i == 2):
+        pass  # do nothing for now, will implement later
+    print(i)  # Output: 0, 1, 2, 3, 4   
 
+    
 
 
 

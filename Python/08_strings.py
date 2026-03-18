@@ -21,7 +21,26 @@ print("Original String:", name) #krishna
 print("First character:", name[0])  #k
 print("Last character:", name[-1])  #a
 
-# slicing of string: if we counted the string from the end (0 -1,-2,-3,-4,-5)
+# Indexing and slicing of string: we can extract a part of the string using slicing.
+
+#Indexing of the string: 
+text='Python'
+print(text[0])  #P
+print(text[1])  #y
+print(text[2])  #t
+print(text[3])  #h
+print(text[4])  #o
+print(text[5])  #n
+
+#Negative indexing of the string:
+print(text[-1])  #n
+print(text[-2])  #o
+print(text[-3])  #h
+print(text[-4])  #t
+print(text[-5])  #y
+print(text[-6])  #P 
+
+# Slicing of the string:
 
 name_slice1=name[0:4]  #slicing from index 0 to 3-excluding index 4.
 print("Sliced String (0-4):", name_slice1)  #kris
@@ -29,20 +48,26 @@ name_slice2=name[2:6]  #slicing from index 2 to 5-excluding index 6
 print("Sliced String (2-6):", name_slice2)  #ishn
 name_slice3=name[:5]   #slicing from start to index 4-excluding index 5
 print("Sliced String (:5):", name_slice3)   #krish
+name_slice4=name[3:]   #slicing from index 3 to end of the string
+print("Sliced String (3:):", name_slice4)   #shna
 
-#Skip characters while slicing
+
+
+
+#Skip characters while slicing: [START:STOP:STEP] STEP-SKIPING CHARACTERS
 a="abcdefghijklmnopqrstuvwxyz"
 print(a[1:9:4]) #answer-beh
 #frist lets print[1:9]-'bcdefghi' start from 1 & skip 9th index.
 #now [1:9:4]-'beh' start from index 1 & skip 4 characters.
 
+#====================================
 #Reversing a string using slicing
 word='krishna'
 print(word[:7])  #krishna - means [0:7]
 print(word[0:])  #krishna - means [0:7]
 
 
-# String Functions:
+# String Methods:
 #1. len(): Returns the length of the string.
 word="Hello, World!"
 print("Length of word:", len(word))  #13

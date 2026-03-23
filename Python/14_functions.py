@@ -140,6 +140,52 @@ square=lambda x: x*x
 print(square(5)) #25
 
 
+#=======================================
+# *args: when we want to pass a variable number of arguments to a function, we can use variable length arguments.
+# e.g. def helloWorld(*args):
+# example:
+def helloWorld(*args):
+    for i in args:
+        print(f"Good Day,{i}")
+helloWorld("krishna", "Rohan", "Sohan") # Good Day,krishna Good Day,Rohan Good Day,Sohan
+
+# example2:
+def add (*args):
+    total=0
+    for i in args: # iterate through the arguments passed to the function and add them to the total variable.
+        total+=i # add the current argument to the total variable.
+    return total
+print(add(1,2,3,4,5)) #15 # we can pass any number of arguments to the add function and it will return the sum of all the arguments passed to it.
+
+# **kwargs: when we want to pass a variable number of keyword arguments to a function, we can use **kwargs.
+# e.g. def helloWorld(**kwargs):
+# example:
+def helloWorld(**kwargs):
+    for key, value in kwargs.items():
+        print(f"Good Day,{key}, {value}")
+helloWorld(name="krishna", ending="Thank you") # Good Day,name, krishna Good Day,ending, Thank you
+helloWorld(name="Rohan", ending="Thanks") # Good Day,name, Rohan Good Day,ending, Thanks
+helloWorld(ending="Thanks", name="Rohan") # Good Day,ending, Thanks Good Day,name, Rohan    
+
+# example2:
+def student_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+student_info(name="krishna", age=20, grade="A") # name: krishna age: 20 grade: A
+student_info(name="Rohan", age=22, grade="B") # name: Rohan age: 22 grade: B
+student_info(name="Sohan", age=21, grade="C") # name: Sohan age: 21 grade: C    
+
+
+
+
+
+
+
+
+
+
+
+
 #=======================================Practice-Set==============================================
 #1. Write a program to using function to find greatest of three number.
 e=1

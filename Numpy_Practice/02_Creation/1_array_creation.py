@@ -9,7 +9,7 @@ arr=np.array([1,2,3,4])
 print(arr)
 
 # # creating arrays with default values:
-# syntax: np.zeros(shape) (3) for 1d, (3,3) for 2d
+# syntax: np.zeros(shape) (3)-for 1d, (3,3) for 2d
 import numpy as np
 zeroes_array=np.zeros(3)
 print(zeroes_array)

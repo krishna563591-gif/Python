@@ -1,4 +1,4 @@
-# Shape of the Array – when working with multidimensional array
+# Shape of the Array – when working with multi-dimensional array
 import numpy as np
 
 arr_2d = np.array([

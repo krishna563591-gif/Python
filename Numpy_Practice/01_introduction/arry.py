@@ -14,7 +14,7 @@ import numpy as np
 ar_1d=np.array([10,20,30,40])
 
 
-#2.2D Array:
+#2.2D Array: datas are stored in rows & columns.
 import numpy as np
 arr_2d=np.array([1,2,3],
                 [4,5,6],
@@ -22,7 +22,22 @@ arr_2d=np.array([1,2,3],
 print(arr_2d)
 
 
-#3.Multi-Dimensional Array-stack of multiple 2d arrays.
+#3.Multi-Dimensional Array-array with more than 2 dimensions-stack of multiple 2d arrays.
+import numpy as np
+
+arr_3d = np.array([
+    [[1, 2, 3], [4, 5, 6]],
+    [[7, 8, 9], [10, 11, 12]]
+])
+
+print(arr_3d.shape)
+# Output: (2, 2, 3) - 2 layers, 2 rows, 3 columns
+
+
+
+
+
+
 #matrix-stac
 import numpy as np
 matrix=np.array([2,4,6],

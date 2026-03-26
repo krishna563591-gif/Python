@@ -15,3 +15,11 @@
 4.non null counts
 5. memeory usages of the dataframe.
 ==========================================================================
+
+01_app.py
+02_save.py
+03_data.txt
+04_rows.py
+05_info.py
+06_describe.py
+07_
